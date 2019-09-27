@@ -23,5 +23,6 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "files": ["node_modules/phaser/types/phaser.d.ts"]
 }
