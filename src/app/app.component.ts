@@ -16,12 +16,21 @@ export class AppComponent {
   title = 'lucky-planet';
   initialize = false;
   game: GameInstance = {
-    width: '100',
-    height: '100%',
+    width: '99%',
+    height: '99%',
     type: Phaser.AUTO,
     scene: BootScene,
-    instance: null
-  }
+    instance: null,
+    physics: {
+      default: 'arcade',
+      arcade: {
+        gravity: {
+          y: -50
+        },
+        debug: true,
+      },
+    },
+  };
 
   getInstance() {
     return this.game.instance;
